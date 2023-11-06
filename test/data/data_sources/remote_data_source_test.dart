@@ -36,6 +36,24 @@ void main() {
 
       final result = await remoteDataSource.getUser();
       expect(result, equals(RandomUserModel.fromMap(tUser.toMap())));
+
+      verify(
+        () => dio.get('https://randomuser.me/api/'),
+      ).called(1);
+      verifyNoMoreInteractions(dio);
+    });
+
+    test('should throw [Exception]', () async {
+      when(() => dio.get(any())).thenThrow((_) => Exception());
+
+      final result = await remoteDataSource.getUser();
+
+      expect(result, throwsA(Exception));
+
+      verify(
+        () => dio.get('https://randomuser.me/api/'),
+      ).called(1);
+      verifyNoMoreInteractions(dio);
     });
   });
 }
