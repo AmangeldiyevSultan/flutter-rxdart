@@ -1,7 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter_rxdart/data/model/random_user_model.dart';
-import 'package:flutter_rxdart/domain/entities/random_user.dart';
 
 abstract class UserRemoteDataSource {
   const UserRemoteDataSource();

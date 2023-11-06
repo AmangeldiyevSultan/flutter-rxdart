@@ -18,6 +18,52 @@ class RandomUserModel extends RandomUser {
       required super.image,
       super.error});
 
+  const RandomUserModel.empty(String? error)
+      : this(
+          name: '',
+          prefixName: '',
+          firstName: '',
+          lastName: '',
+          street: '',
+          city: '',
+          country: '',
+          postcode: '',
+          description: '',
+          email: '',
+          username: '',
+          phone: '',
+          dob: '',
+          image: '',
+          error: error ?? '',
+        );
+  Map<String, dynamic> toMap() {
+    return <String, dynamic>{
+      'name': {
+        'first': firstName,
+        'title': prefixName,
+        'last': lastName,
+      },
+      'location': {
+        'street': street,
+        'city': city,
+        'country': country,
+        'postcode': postcode,
+        'timezone': {'description': description}
+      },
+      'email': email,
+      'login': {
+        'username': username,
+      },
+      'phone': phone,
+      'dob': {
+        'age': dob,
+      },
+      'picture': {
+        'large': image,
+      },
+    };
+  }
+
   factory RandomUserModel.fromMap(Map<String, dynamic> map) {
     return RandomUserModel(
       name: map['name']['first'] as String,

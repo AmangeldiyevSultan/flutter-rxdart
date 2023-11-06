@@ -1,0 +1,56 @@
+{
+    "gender": "male",
+    "name": {
+        "title": "Mr",
+        "first": "Steffen",
+        "last": "Sletta"
+    },
+    "location": {
+        "street": {
+            "number": 1483,
+            "name": "Frennings vei"
+        },
+        "city": "Verdalsøra",
+        "state": "Troms - Romsa",
+        "country": "Norway",
+        "postcode": "5977",
+        "coordinates": {
+            "latitude": "41.0680",
+            "longitude": "-163.4243"
+        },
+        "timezone": {
+            "offset": "+4:30",
+            "description": "Kabul"
+        }
+    },
+    "email": "steffen.sletta@example.com",
+    "login": {
+        "uuid": "dca23edf-ef39-48e3-a735-a1ff6ae20ae1",
+        "username": "bluegoose669",
+        "password": "james1",
+        "salt": "68pJI4mx",
+        "md5": "442ebe8474104dc2d2482a6c4f5c7870",
+        "sha1": "0dc846b9b1413f19b0a27bd1cb7a32dcef6a59eb",
+        "sha256": "213c82587e931a3c595ddbec866e1fe38182ed8d1ac8d70419a03f9823a17d9b"
+    },
+    "dob": {
+        "date": "1950-10-16T09:34:34.297Z",
+        "age": 73
+    },
+    "registered": {
+        "date": "2021-08-13T19:38:03.634Z",
+        "age": 2
+    },
+    "phone": "56910691",
+    "cell": "43514996",
+    "id": {
+        "name": "FN",
+        "value": "16105046301"
+    },
+    "picture": {
+        "large": "https://randomuser.me/api/portraits/men/94.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/94.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/94.jpg"
+    },
+    "nat": "NO"
+}

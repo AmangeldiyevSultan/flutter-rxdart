@@ -7,5 +7,5 @@ class GetUser {
 
   final UserRepo _repo;
 
-  Future<Either<String, RandomUser>> call() => _repo.getUsere();
+  Future<Either<String, RandomUser>> call() => _repo.getUser();
 }

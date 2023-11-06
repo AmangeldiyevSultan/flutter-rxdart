@@ -9,7 +9,7 @@ class UserRepoImpl implements UserRepo {
   final UserRemoteDataSource _repo;
 
   @override
-  Future<Either<String, RandomUserModel>> getUsere() async {
+  Future<Either<String, RandomUserModel>> getUser() async {
     try {
       final result = await _repo.getUser();
       return Right(result);
